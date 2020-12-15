@@ -13,3 +13,8 @@ def home(response):
 def lostSouls(response):
     return render(response, "main/lostSouls.html", {})
 
+def havlin(response):
+    return render(response, "main/havlin.html", {})
+
+
+    

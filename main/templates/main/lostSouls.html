@@ -1,5 +1,19 @@
-{% extends 'main/base.html' %}
+ {% load static%}
+<!DOCTYPE html>
+<head>
 
-{% block content %}
-<h1>You have arrived at the Cave of Lost Souls!</h1>
-{% endblock %}
+    <h1>You have arrived at the Cave of Lost Souls!</h1>
+</head>
+<body>
+
+
+
+
+
+<img src="{% static 'main/images/cave.jpg' %}" alt="cave">
+{% block Cotent %} {% endblock %}
+
+
+</body>
+
+</html>

@@ -1,7 +1,7 @@
 {% load static %}
 <!DOCTYPE html>
 <head>
-
+<title>Hollow World</title>
 <h1>Welcome to Hollow World! You must use you're brains and you might suceed in this world!</h1>
 
 
@@ -12,9 +12,20 @@
 
     <img src="{% static 'main/images/dragonImage.jpg' %}" alt="dragon">
         {% block content %} {% endblock %}
-
-
-
+    <p>Welcome to Hollow World. The text based RPG where you control the hero. You make the decisions and you live or die by them.
+    <br>
+    The first order of business is to select your hero. Will you by the mighty Fighter who uses shield and sword, or the powerful Wizard who weilds incredible magic?
+    <br>
+    You spent the morning walking from the town of Havlin, where you live, in order to find the Cave of Lost Souls. You now stand before the entrance. The cave is dark
+    and bleak looking. From within you think you hear sounds...that don't sound very pleasant.
+    <br>
+    You have a decision to make. Do you go in the cave or do you go back to town?
+    </p>
+    <form action='lostSouls' method="GET">
+    <button type='submit'>Enter the Cave</button>
+    </form>
+    <form action='havlin'   method="GET">
+    <button type='submit'>Go back to town</button>
 </body>
 
 </html>
